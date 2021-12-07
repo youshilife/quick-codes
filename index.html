@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>代码速查</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+    <style>
+        .sidebar {
+            font-size: 12px;
+        }
+
+        .sidebar .search {
+            margin: 10px;
+        }
+
+        .sidebar .app-name {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .sidebar h2 {
+            padding-left: 15px;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .sidebar h2:not(:first-of-type) {
+            margin-top: 15px;
+        }
+
+        .sidebar li {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .sidebar ul li a {
+            font-size: 12px;
+        }
+
+        .sidebar ul li a::before {
+            content: "📄 ";
+        }
+
+        .sidebar .search .results-panel {
+            zoom: 0.8;
+            background-color: #eee;
+        }
+
+        .content {
+            zoom: 0.9;
+            padding: 0;
+        }
+
+        .content h1 {
+            margin: 0 0 30px;
+            text-align: center;
+        }
+
+        #tip-404 {
+            margin: 240px 0 !important;
+            color: #ccc;
+            font-size: 32px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            name: "代码速查",
+            repo: "",
+            notFoundPage: true,
+            loadSidebar: true,
+            search: {
+                placeholder: "搜索",
+                noData: "未找到",
+            },
+            copyCode: {
+                buttonText: '复制到剪贴板',
+                errorText: '出错',
+                successText: '已复制'
+            },
+        };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+    <!-- 搜索插件 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- 代码复制插件 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <!-- 代码高亮语言包 -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-nginx.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-properties.min.js"></script>
+</body>
+
+</html>
